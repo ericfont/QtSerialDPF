@@ -1,3 +1,6 @@
 [submodule "vcpkg"]
 	path = vcpkg
 	url = https://github.com/microsoft/vcpkg.git
+[submodule "DPF"]
+	path = DPF
+	url = https://github.com/DISTRHO/DPF
