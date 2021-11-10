@@ -4,6 +4,7 @@
   "dependencies": [
     "cxxopts",
     "fmt",
-    "range-v3"
+    "range-v3",
+    "qt5-base"
   ]
 }

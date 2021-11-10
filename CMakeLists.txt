@@ -5,6 +5,9 @@ project(QtSerialDPF CXX)
 find_package(fmt REQUIRED)
 find_package(range-v3 REQUIRED)
 find_package(cxxopts REQUIRED)
+find_package(Qt5Core REQUIRED)
+find_package(Qt5Widgets REQUIRED)
+find_package(Qt5Gui REQUIRED)
 
 add_executable(QtSerialDPF src/main.cxx)
 target_compile_features(QtSerialDPF PRIVATE cxx_std_17)
@@ -13,7 +16,11 @@ target_link_libraries(QtSerialDPF
   PRIVATE
     fmt::fmt
     range-v3::range-v3
-    cxxopts::cxxopts)
+    cxxopts::cxxopts
+    Qt5::Core
+    Qt5::Widgets
+    Qt5::Gui
+    )
 
 set_target_properties( QtSerialDPF
   PROPERTIES
