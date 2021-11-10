@@ -12,8 +12,8 @@ Generates Fibonnaci sequence up to the maximum that `<cstdint>`'s `uintmax_t` su
 ## Local Build
 
 ```
-git clone https://github.com/ericfont/fibo-vcpkg-example.git
-cd fibo-vcpkg-example
+git clone https://github.com/ericfont/QtSerialDPF.git
+cd QtSerialDPF
 cmake -B build -S . -DCMAKE_TOOLCHAIN_FILE=../vcpkg/scripts/buildsystems/vcpkg.cmake
 cmake --build build
 ```
